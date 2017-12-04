@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.v.qqspace.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.v.qqspace.CustomViews.TitleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:Title_text_mid_Content="编写说说"
+            app:Title_text_mid_Size="18sp"
+            app:Title_text_right_Content="发布"
+            app:Title_text_right_Size="16sp"></com.v.qqspace.CustomViews.TitleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#fff"
+            android:gravity="top"
+            android:hint="你想说什么?"
+            android:maxLength="150"
+            android:padding="5dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="还可以输入0/150" />
+
+           <com.v.qqspace.CustomViews.DragGridView
+               android:gravity="center"
+               android:numColumns="3"
+               android:id="@+id/gv"
+               android:layout_width="match_parent"
+               android:layout_height="250dp"/>
+            <TextView
+                android:text="我的位置"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvLocation"
+                android:text="xxx"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_weight="1"
+                   android:text="设置可见"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:id="@+id/tvSelect"
+                   android:layout_weight="1"
+                   android:text="所有人可见"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleView">
+        <attr name="Title_text_mid_Content" format="string"/>
+        <attr name="Title_text_right_Content" format="string"/>
+
+        <attr name="Title_text_mid_Size" format="dimension"/>
+        <attr name="Title_text_right_Size" format="dimension"/>
+
+    </declare-styleable>
+</resources>
